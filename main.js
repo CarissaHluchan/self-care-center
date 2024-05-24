@@ -1,8 +1,3 @@
-/**### Add Random Affirmation and Mantra feature
-- When a user selects a message option and then clicks the “Receive Message” button, 
-the user sees a random message from the list of possible messages for that category
-- When the message appears, the mediation icon disappears from the message area */
-
 var affirmations = [
     'I forgive myself and set myself free.',
     'I believe I can be all that I want to be.',
@@ -36,3 +31,52 @@ var Mantras = [
     'Onward and upward.',
     'I am the sky, the rest is weather.',
 ];
+
+/**### Add Random Affirmation and Mantra feature
+- When a user selects a message option and then clicks the “Receive Message” button, 
+the user sees a random message from the list of possible messages for that category
+- When the message appears, the mediation icon disappears from the message area */
+
+var affirmation = document.querySelector('#affirmation-button');
+var mantra = document.querySelector('#mantra-button');
+var message = document.querySelector('#message-button');
+var deleteM = document.querySelector('#delete-button');
+
+affirmationButton.addEventListener('click', affirmationClick);
+mantraButton.addEventListener('click', mantraClick);
+messageButton.addEventListener('click', receiveMessage);
+deleteButton.addEventListener('click', deleteMessage);
+
+function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+}
+
+function affirmationClick() {
+    // hilights the button 
+    // returns a random item from the array of affirmations
+};
+
+function mantraClick() {
+    // hilights the button 
+    // returns a random string from the array of mantras
+};
+
+function receiveMessage(affirmation, mantra) {
+    // useing the results of the affirmation Click or mantra click 
+    // returns a random message
+    // shows the message to the page
+    // saves the message to a new dom array
+    // research: how to take in one string and ignore the other
+}
+
+/**### User can delete a message
+- Add the ability to delete a message 
+(ie: when a message shows up, show a button that says “I don’t like this message” (or something similar), 
+and remove it from the list so that it will not show up any more.
+Make sure to alert the user in some way that the message has been removed. */
+function deleteMessage() {
+    // when delete message is clicked 
+    // the message is deleted from the Dom array
+    // a new message appears that says the message has been deleted
+
+}
