@@ -14,7 +14,7 @@ var affirmations = [
     'I manifest perfect health by making smart choices.',
 ];
 
-var Mantras = [
+var mantras = [
     'Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.',
     'Don\'t let yesterday take up too much of today.',
     'Every day is a second chance.',
@@ -37,14 +37,15 @@ var Mantras = [
 the user sees a random message from the list of possible messages for that category
 - When the message appears, the mediation icon disappears from the message area */
 
-var affirmation = document.querySelector('#affirmation-button');
-var mantra = document.querySelector('#mantra-button');
-var message = document.querySelector('#message-button');
-var deleteM = document.querySelector('#delete-button');
+var affirmationButton = document.querySelector('#affirmation-radio');
+var mantraButton = document.querySelector('#mantra-radio');
+var messageButton = document.querySelector('#message-button');
+var messageSection = document.querySelector('#visible-message')
+var deleteButton = document.querySelector('#delete-button');
 
 affirmationButton.addEventListener('click', affirmationClick);
 mantraButton.addEventListener('click', mantraClick);
-messageButton.addEventListener('click', receiveMessage);
+// messageButton.addEventListener('click', receiveMessage);
 deleteButton.addEventListener('click', deleteMessage);
 
 function getRandomIndex(array) {
@@ -52,22 +53,51 @@ function getRandomIndex(array) {
 }
 
 function affirmationClick() {
-    // hilights the button 
+    console.log('affirmation', event.target.checked);
+    console.log('opposite', mantraButton.checked)
+    // radio button
     // returns a random item from the array of affirmations
+    // use getRandomIndex 
+    receiveMessage(affirmations);
 };
 
 function mantraClick() {
-    // hilights the button 
+    console.log('mantra', event.target.checked);
+    console.log('opposite', affirmationButton.checked)
+    // radio button 
     // returns a random string from the array of mantras
+    // recieve message
+    receiveMessage(mantras);
 };
 
-function receiveMessage(affirmation, mantra) {
+function receiveMessage(messages) {
+    var randomIndex = getRandomIndex(messages);
+    console.log('message', messages[randomIndex]);
     // useing the results of the affirmation Click or mantra click 
     // returns a random message
     // shows the message to the page
     // saves the message to a new dom array
     // research: how to take in one string and ignore the other
+    // pass a single arrg 
+    // use getRandomIndex 
+
+    // when a user clicks recieve message the image will go away
+    // clear out the inner.HTML
+    // once clear use the inner.HTML to insert the message
 }
+
+// if (affirmationClick()) {
+//     messageButton.addEventListener('click', affirmationMessage)
+// }
+// function affirmationMessage() {
+//     messageSection.innerHTML += `<section id="visible message">${messages[randomIndex]}</section>`;
+// }
+// function receiveMessageButton(messages) {
+//     if (messageButton.addEventListener('click', receiveMessage)) {
+//         console.log(messages[randomIndex])
+//         messageSection.innerHTML += `<section id="visible message">${messages[randomIndex]}</section>`;
+//     }
+// }
 
 /**### User can delete a message
 - Add the ability to delete a message 
