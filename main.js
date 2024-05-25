@@ -32,6 +32,9 @@ var mantras = [
     'I am the sky, the rest is weather.',
 ];
 
+var selectedMessages = [];
+var currentMessage = '';
+
 /**### Add Random Affirmation and Mantra feature
 - When a user selects a message option and then clicks the “Receive Message” button, 
 the user sees a random message from the list of possible messages for that category
@@ -45,7 +48,7 @@ var deleteButton = document.querySelector('#delete-button');
 
 affirmationButton.addEventListener('click', affirmationClick);
 mantraButton.addEventListener('click', mantraClick);
-// messageButton.addEventListener('click', receiveMessage);
+messageButton.addEventListener('click', receiveMessage);
 deleteButton.addEventListener('click', deleteMessage);
 
 function getRandomIndex(array) {
@@ -55,24 +58,30 @@ function getRandomIndex(array) {
 function affirmationClick() {
     console.log('affirmation', event.target.checked);
     console.log('opposite', mantraButton.checked)
+    selectedMessages = affirmations;
     // radio button
     // returns a random item from the array of affirmations
     // use getRandomIndex 
-    receiveMessage(affirmations);
+    // receiveMessage(affirmations);
 };
 
 function mantraClick() {
     console.log('mantra', event.target.checked);
     console.log('opposite', affirmationButton.checked)
+    selectedMessages = mantras;
     // radio button 
     // returns a random string from the array of mantras
     // recieve message
-    receiveMessage(mantras);
+    // receiveMessage(mantras);
 };
 
-function receiveMessage(messages) {
-    var randomIndex = getRandomIndex(messages);
-    console.log('message', messages[randomIndex]);
+function receiveMessage() {
+    var randomIndex = getRandomIndex(selectedMessages);
+    // console.log('message', selectedMessages[randomIndex]);
+    if (selectedMessages.length) {
+        messageSection.innerHTML = selectedMessages[randomIndex];
+        currentMessage = selectedMessages[randomIndex];
+    };
     // useing the results of the affirmation Click or mantra click 
     // returns a random message
     // shows the message to the page
@@ -80,24 +89,11 @@ function receiveMessage(messages) {
     // research: how to take in one string and ignore the other
     // pass a single arrg 
     // use getRandomIndex 
-
     // when a user clicks recieve message the image will go away
     // clear out the inner.HTML
     // once clear use the inner.HTML to insert the message
 }
 
-// if (affirmationClick()) {
-//     messageButton.addEventListener('click', affirmationMessage)
-// }
-// function affirmationMessage() {
-//     messageSection.innerHTML += `<section id="visible message">${messages[randomIndex]}</section>`;
-// }
-// function receiveMessageButton(messages) {
-//     if (messageButton.addEventListener('click', receiveMessage)) {
-//         console.log(messages[randomIndex])
-//         messageSection.innerHTML += `<section id="visible message">${messages[randomIndex]}</section>`;
-//     }
-// }
 
 /**### User can delete a message
 - Add the ability to delete a message 
@@ -105,8 +101,12 @@ function receiveMessage(messages) {
 and remove it from the list so that it will not show up any more.
 Make sure to alert the user in some way that the message has been removed. */
 function deleteMessage() {
+    console.log('current message', currentMessage)
+    selectedMessages.splice(selectedMessages.indexOf(currentMessage), 1);
+    messageSection.innerHTML = 'The message was removed.';
     // when delete message is clicked 
-    // the message is deleted from the Dom array
+    // the message is deleted from the array
     // a new message appears that says the message has been deleted
+    // .splice()
 
 }
