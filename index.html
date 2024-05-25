@@ -12,20 +12,20 @@
   <container class="all-buttons">
     <box class="affirmation-mantra-buttons">
       <div class="a-m-buttons-inner">
-        <button class="circle-button"></button>
-        <div class="text-a-m">affirmation</div>
+        <input type="radio" id="affirmation-radio" name="fav_language" value="HTML">
+        <label for="html" class="text-a-m">affirmation</label>
       </div>
       <div class="a-m-buttons-inner">
-        <button class="circle-button"></button>
-        <div class="text-a-m">mantra</div>
+        <input type="radio" id="mantra-radio" name="fav_language" value="HTML">
+        <label for="html" class="text-a-m">Mantra</label>
       </div>
     </box>
-    <button class="message-button">Receive Message</button>
+    <button id="message-button" class="message-button">Receive Message</button>
   </container>
-  <section>
-    <img src="assets/meditate.svg" class="ringing-bell" alt="Ringing bell">
+  <section id="visible-message">
+    <img src="assets/meditate.svg" class="meitation-icon" alt="Meitation Icon">
   </section>
-  <button class="delete-button">Delete Message</button>
+  <button id="delete-button" class="delete-button">Don't see this message again</button>
   <div class="space-at-bottom"></div>
   <script type="text/javascript" src="main.js"></script>
 </body>
