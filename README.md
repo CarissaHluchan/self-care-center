@@ -10,7 +10,7 @@ There is no requirement that one has to clone the application. One can use an on
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-![Sceenshot of application](https://photos.google.com/album/AF1QipMMsE12QcayqZmiNn1wc5Sylf8Am16lRGOPLRoM/photo/AF1QipOhnEhPQGGNqsIr-zceAHrWemVBbBgg46pxteWO)
+![image](https://github.com/CarissaHluchan/self-care-center/assets/162339081/ca372764-8a58-44b9-947a-0dfef281f06e)
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
