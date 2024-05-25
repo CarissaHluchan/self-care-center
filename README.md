@@ -10,7 +10,7 @@ There is no requirement that one has to clone the application. One can use an on
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-![alt text](<../../../../Desktop/Screenshot 2024-05-25 at 12.25.28 PM.png>)
+![Sceenshot of application](<../../../../Desktop/Screenshot 2024-05-25 at 12.25.28 PM.png>)
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
