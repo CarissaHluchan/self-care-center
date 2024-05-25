@@ -35,11 +35,6 @@ var mantras = [
 var selectedMessages = [];
 var currentMessage = '';
 
-/**### Add Random Affirmation and Mantra feature
-- When a user selects a message option and then clicks the “Receive Message” button, 
-the user sees a random message from the list of possible messages for that category
-- When the message appears, the mediation icon disappears from the message area */
-
 var affirmationButton = document.querySelector('#affirmation-radio');
 var mantraButton = document.querySelector('#mantra-radio');
 var messageButton = document.querySelector('#message-button');
@@ -59,54 +54,24 @@ function affirmationClick() {
     console.log('affirmation', event.target.checked);
     console.log('opposite', mantraButton.checked)
     selectedMessages = affirmations;
-    // radio button
-    // returns a random item from the array of affirmations
-    // use getRandomIndex 
-    // receiveMessage(affirmations);
 };
 
 function mantraClick() {
     console.log('mantra', event.target.checked);
     console.log('opposite', affirmationButton.checked)
     selectedMessages = mantras;
-    // radio button 
-    // returns a random string from the array of mantras
-    // recieve message
-    // receiveMessage(mantras);
 };
 
 function receiveMessage() {
     var randomIndex = getRandomIndex(selectedMessages);
-    // console.log('message', selectedMessages[randomIndex]);
     if (selectedMessages.length) {
         messageSection.innerHTML = selectedMessages[randomIndex];
         currentMessage = selectedMessages[randomIndex];
     };
-    // useing the results of the affirmation Click or mantra click 
-    // returns a random message
-    // shows the message to the page
-    // saves the message to a new dom array
-    // research: how to take in one string and ignore the other
-    // pass a single arrg 
-    // use getRandomIndex 
-    // when a user clicks recieve message the image will go away
-    // clear out the inner.HTML
-    // once clear use the inner.HTML to insert the message
 }
 
-
-/**### User can delete a message
-- Add the ability to delete a message 
-(ie: when a message shows up, show a button that says “I don’t like this message” (or something similar), 
-and remove it from the list so that it will not show up any more.
-Make sure to alert the user in some way that the message has been removed. */
 function deleteMessage() {
     console.log('current message', currentMessage)
     selectedMessages.splice(selectedMessages.indexOf(currentMessage), 1);
     messageSection.innerHTML = 'The message was removed.';
-    // when delete message is clicked 
-    // the message is deleted from the array
-    // a new message appears that says the message has been deleted
-    // .splice()
-
 }
