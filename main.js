@@ -38,7 +38,7 @@ var currentMessage = '';
 var affirmationButton = document.querySelector('#affirmation-radio');
 var mantraButton = document.querySelector('#mantra-radio');
 var messageButton = document.querySelector('#message-button');
-var messageSection = document.querySelector('#visible-message')
+var messageSection = document.querySelector('#visible-message');
 var deleteButton = document.querySelector('#delete-button');
 
 affirmationButton.addEventListener('click', affirmationClick);
