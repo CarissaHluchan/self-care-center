@@ -48,7 +48,7 @@ deleteButton.addEventListener('click', deleteMessage);
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
-}
+};
 
 function affirmationClick() {
     selectedMessages = affirmations;
@@ -64,10 +64,10 @@ function receiveMessage() {
         messageSection.innerHTML = selectedMessages[randomIndex];
         currentMessage = selectedMessages[randomIndex];
     };
-}
+};
 
 function deleteMessage() {
     console.log('current message', currentMessage)
     selectedMessages.splice(selectedMessages.indexOf(currentMessage), 1);
     messageSection.innerHTML = 'The message was removed.';
-}
+};
