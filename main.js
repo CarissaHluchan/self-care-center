@@ -51,14 +51,10 @@ function getRandomIndex(array) {
 }
 
 function affirmationClick() {
-    console.log('affirmation', event.target.checked);
-    console.log('opposite', mantraButton.checked)
     selectedMessages = affirmations;
 };
 
 function mantraClick() {
-    console.log('mantra', event.target.checked);
-    console.log('opposite', affirmationButton.checked)
     selectedMessages = mantras;
 };
 
