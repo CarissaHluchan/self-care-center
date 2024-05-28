@@ -67,7 +67,6 @@ function receiveMessage() {
 };
 
 function deleteMessage() {
-    console.log('current message', currentMessage)
     selectedMessages.splice(selectedMessages.indexOf(currentMessage), 1);
     messageSection.innerHTML = 'The message was removed.';
 };
