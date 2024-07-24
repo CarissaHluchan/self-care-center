@@ -14,7 +14,7 @@ There is no requirement that one has to clone the application. One can use an on
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
-I am a jounior dev in my 3rd week of a devloper boatcamp at Turing Sowaftware and Designi Was given 5 days to complete the project.
+I am a jounior dev in my 3rd week of a devloper boatcamp at Turing Sowaftware and Design. I Was given 5 days to complete the project.
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
