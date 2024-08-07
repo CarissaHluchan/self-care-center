@@ -1,4 +1,4 @@
-# [Self-Care Center](https://carissahluchan.github.io/self-care-center/) 
+# <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48c/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48c/512.gif" alt="💌" width="32" height="32"></picture> [Self-Care Center](https://carissahluchan.github.io/self-care-center/) <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48c/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48c/512.gif" alt="💌" width="32" height="32"></picture>
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
