@@ -6,7 +6,10 @@ The website I have built is designed to display affirmations or mantra messages 
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
-There is no requirement that one has to clone the application. One can use an online version of this webpage by using the deployment.
+- Fork this project to your own Github account.
+- Clone the repository to your local machine.
+- cd into the project.
+- Use the open index.html command to view the webpage.
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
@@ -18,13 +21,17 @@ I am a jounior dev in my 3rd week of a devloper boatcamp at Turing Sowaftware an
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
-Carissa Hluchan worked on this solo project.
-https://github.com/CarissaHluchan
+Built & deployed by [Carissa Hluchan](https://github.com/CarissaHluchan)
 
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
-The learning goals of the project included gaining experience building an application that utilizes HTML, CSS, and JavaScript. Learn to write HTML and CSS to match a provided composition. Understand how to listen to and respond to user events while individualizing my programming skill set.
+- Gain experience building an application that utilizes HTML, CSS and JavaScript
+- Write HTML and CSS to match a provided comp
+- Understand how to listen to and respond to user events
+- Individualize your programming skill set
 
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
-This was my first application in writing HTML and CSS. I had difficulty using and applying flex box declarations to align elements in the composition. After some iterations, I got the DOM to display as intended. Adding functionality to the data model proved challenging. I learned how to create an empty array and string to hold elements for the DOM display.
+- HTML and CSS: This was my first application in writing HTML and CSS. 
+- CSS flexbox: I used flex box declarations to align elements in the composition. After some iterations, I got the DOM to display as intended.
+- Dom functions: Adding functionality to the data model proved challenging. I learned how to create an empty array and string to hold elements for the DOM display.
